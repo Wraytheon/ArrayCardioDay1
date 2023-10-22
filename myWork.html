@@ -126,12 +126,14 @@
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
 
+    // Use the reduce function to create an object that counts the occurrences of each element in the array
     const instanceSum = data.reduce((acc, value) => {
-        return {
+      // Spread the existing accumulator object to avoid mutation
+      return {
         ...acc,
+        // Update the count for the current value in the accumulator object
         [value]: (acc[value] || 0) + 1,
       };
-
     }, {});
     console.table(instanceSum)
 
