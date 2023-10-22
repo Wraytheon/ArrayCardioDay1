@@ -99,7 +99,9 @@
       const category = document.querySelector(".mw-category");
       const links = Array.from(category.querySelectorAll("a"));
       const de = links;
-      return de.map(link => link.textContent)
+      const list = de.map(link => link.textContent);
+      const final = list.filter(streetName => streetName.includes("de"))
+      return final
 
 
     }
