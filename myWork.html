@@ -73,10 +73,10 @@
 
 //---------------------------------------------------------------------------
     // 5. Sort the inventors by years lived
-    const yearsLived = inventors.sort((a, b) => {
-      return (a.passed - b.passed) - (a.year - b.year)
-    })
-    console.table(yearsLived)
+    // const yearsLived = inventors.sort((a, b) => {
+    //   return (a.passed - b.passed) - (a.year - b.year)
+    // })
+    // console.table(yearsLived)
 
 //---------------------------------------------------------------------------
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
@@ -90,6 +90,10 @@
 //---------------------------------------------------------------------------
     // 7. sort Exercise
     // Sort the people alphabetically by last name
+    function sortByLast() {
+      return people.sort()
+    }
+    console.table(sortByLast());
 
   //Arrow function syntax
   // const alpha = people.sort((lastOne, nextOne) => {
