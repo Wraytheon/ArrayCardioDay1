@@ -99,7 +99,7 @@
       const category = document.querySelector(".mw-category");
       const links = Array.from(category.querySelectorAll("a"));
       const de = links;
-      return de
+      return de.map(link => link.textContent)
 
 
     }
