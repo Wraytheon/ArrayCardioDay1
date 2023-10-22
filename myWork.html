@@ -75,12 +75,16 @@
 
     //---------------------------------------------------------------------------
     // 5. Sort the inventors by years lived
-    const test = () => {
-      inventors.forEach((inventor) => {
-      return [inventor.passed - inventor.year]
-      })
-    }
-    console.table(test())
+    // const test = () => {
+    //   const differences = [];
+
+    //   inventors.forEach((inventor) => {
+    //     differences.push(inventor.passed - inventor.year);
+    //   });
+
+    //   return differences;
+    // };
+    // console.log(test())
 
     //---------------------------------------------------------------------------
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
@@ -91,6 +95,15 @@
     // const de = links
     //                 .map(link => link.textContent)
     //                 .filter(streetName => streetName.includes("de"))
+    function boulevardList () {
+      const category = document.querySelector(".mw-category");
+      const links = Array.from(category.querySelectorAll("a"));
+      const de = links;
+      return de
+
+
+    }
+    console.log(boulevardList())
     //---------------------------------------------------------------------------
     // 7. sort Exercise
     // Sort the people alphabetically by last name
