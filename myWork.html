@@ -125,9 +125,14 @@
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
-    const instanceSum = data.reduce((acc, curr) => {
-      
-    })
+
+    const instanceSum = data.reduce((acc, value) => {
+        return {
+        ...acc,
+        [value]: (acc[value] || 0) + 1,
+      };
+
+    }, {});
     console.table(instanceSum)
 
     //---------------------------------------------------------------------------
